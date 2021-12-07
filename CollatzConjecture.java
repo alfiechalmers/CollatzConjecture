@@ -21,7 +21,7 @@ public class CollatzConjecture {
     }
 
     public static String writeLine (long num) {
-        ArrayList<String> line = new ArrayList<String>();
+        ArrayList<String> line = new ArrayList<String>(100);
         line.add(String.valueOf(num));
         while (num > 1) {
             if (num % 2 == 0) {
